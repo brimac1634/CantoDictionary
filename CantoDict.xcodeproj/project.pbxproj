@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2C9EEF25173EF39FAC68491F /* Pods_CantoDict.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 94DCDFCD550845408BF76AD5 /* Pods_CantoDict.framework */; };
+		D208BC552099C50400B00B63 /* Entries.swift in Sources */ = {isa = PBXBuildFile; fileRef = D208BC542099C50400B00B63 /* Entries.swift */; };
 		D2107D98208EE4A600B8022B /* WordOfTheDayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2107D97208EE4A600B8022B /* WordOfTheDayController.swift */; };
 		D2107D9A208EE4E400B8022B /* SearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2107D99208EE4E400B8022B /* SearchController.swift */; };
 		D2107D9C208EE50900B8022B /* FavoritesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2107D9B208EE50900B8022B /* FavoritesController.swift */; };
@@ -23,6 +24,7 @@
 		94DCDFCD550845408BF76AD5 /* Pods_CantoDict.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CantoDict.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		B5BC8F8984DE47F1F1174823 /* Pods-CantoDict.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantoDict.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CantoDict/Pods-CantoDict.debug.xcconfig"; sourceTree = "<group>"; };
 		D1E706E8869DDBB34614D9C8 /* Pods-CantoDict.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CantoDict.release.xcconfig"; path = "Pods/Target Support Files/Pods-CantoDict/Pods-CantoDict.release.xcconfig"; sourceTree = "<group>"; };
+		D208BC542099C50400B00B63 /* Entries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entries.swift; sourceTree = "<group>"; };
 		D2107D97208EE4A600B8022B /* WordOfTheDayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordOfTheDayController.swift; sourceTree = "<group>"; };
 		D2107D99208EE4E400B8022B /* SearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchController.swift; sourceTree = "<group>"; };
 		D2107D9B208EE50900B8022B /* FavoritesController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritesController.swift; sourceTree = "<group>"; };
@@ -57,9 +59,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		D208BC522099C4BE00B00B63 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				D2BEC6DB208CB02C004D9FB8 /* TabViewController.swift */,
+				D2107D9D208EE52400B8022B /* MenuController.swift */,
+				D2107D9B208EE50900B8022B /* FavoritesController.swift */,
+				D2107D99208EE4E400B8022B /* SearchController.swift */,
+				D2107D97208EE4A600B8022B /* WordOfTheDayController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		D208BC532099C4DE00B00B63 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D2BEC6DD208CB02C004D9FB8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D208BC562099C50900B00B63 /* Data Model */ = {
+			isa = PBXGroup;
+			children = (
+				D208BC542099C50400B00B63 /* Entries.swift */,
+			);
+			path = "Data Model";
+			sourceTree = "<group>";
+		};
 		D2B0F351208CC1DF00040B6B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D2BEC6E0208CB02D004D9FB8 /* Assets.xcassets */,
+				D2BEC6E2208CB02D004D9FB8 /* LaunchScreen.storyboard */,
 			);
 			path = "Supporting Files";
 			sourceTree = "<group>";
@@ -86,16 +118,11 @@
 			isa = PBXGroup;
 			children = (
 				D2BEC6D9208CB02C004D9FB8 /* AppDelegate.swift */,
-				D2BEC6DB208CB02C004D9FB8 /* TabViewController.swift */,
-				D2107D9D208EE52400B8022B /* MenuController.swift */,
-				D2107D9B208EE50900B8022B /* FavoritesController.swift */,
-				D2107D99208EE4E400B8022B /* SearchController.swift */,
-				D2107D97208EE4A600B8022B /* WordOfTheDayController.swift */,
-				D2BEC6DD208CB02C004D9FB8 /* Main.storyboard */,
-				D2BEC6E0208CB02D004D9FB8 /* Assets.xcassets */,
-				D2BEC6E2208CB02D004D9FB8 /* LaunchScreen.storyboard */,
+				D208BC522099C4BE00B00B63 /* Controllers */,
+				D208BC532099C4DE00B00B63 /* View */,
 				D2BEC6E5208CB02D004D9FB8 /* Info.plist */,
 				D2B0F351208CC1DF00040B6B /* Supporting Files */,
+				D208BC562099C50900B00B63 /* Data Model */,
 			);
 			path = CantoDict;
 			sourceTree = "<group>";
@@ -239,6 +266,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D2107D98208EE4A600B8022B /* WordOfTheDayController.swift in Sources */,
+				D208BC552099C50400B00B63 /* Entries.swift in Sources */,
 				D2BEC6DC208CB02C004D9FB8 /* TabViewController.swift in Sources */,
 				D2BEC6DA208CB02C004D9FB8 /* AppDelegate.swift in Sources */,
 				D2107D9C208EE50900B8022B /* FavoritesController.swift in Sources */,
@@ -391,7 +419,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AY47KJ5YA8;
 				INFOPLIST_FILE = CantoDict/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianmacpherson.CantoDict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -407,7 +438,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = AY47KJ5YA8;
 				INFOPLIST_FILE = CantoDict/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.brianmacpherson.CantoDict;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
